@@ -15,7 +15,8 @@
     --color-tiktok-pink: #EE1D52; /* A common TikTok pink */
     --color-tiktok-blue: #00F2EA; /* A common TikTok blue */
     --color-whatsapp: #25D366;
-
+    --color-instagram: #E1306C; /* Instagram gradient primary */
+    --color-instagram-secondary: #C13584; /* Instagram gradient secondary */
     --font-family-base: 'Tajawal', sans-serif;
     --border-radius-base: 8px;
     --border-radius-large: 12px;
@@ -372,7 +373,7 @@ address { font-style: normal; }
 .social-media-section { background-color: var(--color-card-background); }
 .social-links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -451,6 +452,17 @@ address { font-style: normal; }
 .social-card.tiktok:hover { border-top: 4px solid var(--color-tiktok-pink); }
 .social-card.whatsapp-contact i.fab { color: var(--color-whatsapp); }
 .social-card.whatsapp-contact:hover { border-top: 4px solid var(--color-whatsapp); }
+
+/* Instagram styling */
+.social-card.instagram i.fab { 
+    color: var(--color-instagram);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social-card.instagram:hover { border-top: 4px solid var(--color-instagram); }
 
 /* --- Footer --- */
 .site-footer-bottom {
